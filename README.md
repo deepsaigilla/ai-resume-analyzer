@@ -57,9 +57,8 @@ The system computes a **semantic match score** and provides **intelligent sugges
      - ATS keywords
 4. Results are displayed on the UI in real time
 
-```
 ## 📂 Project Structure
-
+```
 ai-resume-analyzer/
 │
 ├── backend/
@@ -112,4 +111,5 @@ Multiple resume comparison
 
 ⭐ If you like this project
 Give it a ⭐ on GitHub — it really helps!
+
 
