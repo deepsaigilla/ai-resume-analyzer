@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>AI Resume Analyzer</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="app-container">
+  <h1>AI Resume Analyzer</h1>
+  <p class="subtitle">AI-powered resume & job description matching</p>
+
+  <div class="grid">
+    <!-- LEFT: INPUT SECTION -->
+    <div class="card">
+      <h2>Upload & Analyze</h2>
+
+      <div id="drop-area">
+        <p><strong>Drag & drop</strong> your resume</p>
+        <span>or</span>
+        <input type="file" id="resume" accept=".pdf" hidden>
+        <button onclick="document.getElementById('resume').click()">Choose File</button>
+        <p id="file-name"></p>
+      </div>
+
+      <textarea id="jd" placeholder="Paste the job description here..."></textarea>
+
+      <button class="analyze-btn" onclick="analyze()">Analyze Resume</button>
+    </div>
+
+    <!-- RIGHT: OUTPUT SECTION -->
+    <div class="card">
+      <h2>Analysis Result</h2>
+      <div id="result" class="result-box">
+        <p class="muted">Your results will appear here.</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
